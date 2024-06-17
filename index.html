@@ -21,18 +21,26 @@
     <link rel="stylesheet" href="css/main.css" />
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
   </head>
+
   <body>
     <div class="wrapper">
+      <!-- header -->
       <header class="header">
+        <!-- header-top -->
         <div class="header-top py-1">
           <div class="container-fluid">
             <div class="row">
+              <!-- header-phone -->
               <div class="col-6 col-sm-4">
-                <div class="header-top-phone d-flex align-items-center h-100 w-100">
+                <div
+                  class="header-top-phone d-flex align-items-center h-100 w-100"
+                >
                   <i class="fa-solid fa-mobile-screen"></i>
                   <a class="ms-2" href="tel:+79126562348">8(912)6562348</a>
                 </div>
               </div>
+              <!--/ header-phone -->
+              <!-- header-social-icons -->
               <div class="col-sm-4 d-none d-sm-block">
                 <ul class="social-icons d-flex justify-content-center">
                   <li>
@@ -52,6 +60,8 @@
                   </li>
                 </ul>
               </div>
+              <!--/ header-social-icons -->
+              <!-- header-top-social-icons -->
               <div class="col-6 col-sm-4">
                 <div class="lang d-flex justify-content-end">
                   <div class="btn-group me-2">
@@ -89,12 +99,54 @@
                   </div>
                 </div>
               </div>
+              <!--/ header-top-social-icons -->
             </div>
           </div>
         </div>
-        <div class="header-middle"></div>
+        <!--/ header-top -->
+
+        <!-- header-middle -->
+        <div class="header-middle">
+          <div class="header-middle bg-white py-4">
+            <div class="container-fluid">
+              <div class="row">
+                <!-- header-logo -->
+                <div class="col-md-4">
+                  <a href="index.html" class="header-logo h1">E-МАГ</a>
+                </div>
+                <!--/ header-logo -->
+                <!-- header-search -->
+                <div class="col-md-4">
+                  <form action="#">
+                    <div class="input-group mb-3">
+                      <input type="text" class="form-control" 
+                      name="search"
+                      placeholder="Поиск..." aria-label="Поиск..." aria-describedby="button-search">
+                      <button class="btn btn-outline-warning" type="submit" id="button-search"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>                    
+                  </form>
+                </div>
+                <!--/ header-search -->
+                <!-- header-heart-and-cart -->
+                <div class="col-md-4 cart-button text-end">
+                  <a href="#" class="btn">
+                    <i class="fa-solid fa-heart"></i>
+                    <span class="badge text-bg-warning cadr-badge bg-warning border-warning rounded-circle">3</span>
+                  </a>
+                  <button class="btn" type="button">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="badge text-bg-warning cadr-badge bg-warning border-warning rounded-circle">5</span>
+                  </button>
+                </div>
+                <!--/ header-heart-and-cart -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--/ header-middle -->
         <div class="header-buttom"></div>
       </header>
+      <!--/ header -->
       <main class="main">Content</main>
       <footer class="footer">Footer</footer>
     </div>
