@@ -53,6 +53,10 @@ img {
     border-color: var(--accent-color);
 }
 
+.bg-warning {
+    background-color: var(--accent-color) !important;
+}
+
 .btn-outline-warning:hover {
     background-color: var(--accent-color);
     color: var(--contrast-color);
@@ -128,21 +132,12 @@ body {
     color: var(--contrast-color);
 }
 
-.card-button {
+.cart-button .btn {
     color: var(--contrast-color);
     transition:  all .3s;
 }
 
-.btn {
-    color: var(--contrast-color);
-    transition:  all .3s;
-}
-
-.card-button {
-    border: 1px solid var(--contrast-color);
-}
-
-.btn:hover {
+.cart-button .btn:hover {
     border: 1px solid var(--contrast-color);
 }
 
