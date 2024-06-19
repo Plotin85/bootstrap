@@ -62,6 +62,10 @@ img {
     color: var(--contrast-color);
 }
 
+.row {
+    margin: 0;
+}
+
 /*===General Rules===*/
 body {
     min-width: 320px;
@@ -141,4 +145,30 @@ body {
     border: 1px solid var(--contrast-color);
 }
 
+.header-bottom {
+    border-top: 3px solid var(--accent-color);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, .3);
+}
+
+.header-bottom .navbar {
+    background-color: var(--contrast-color) !important;
+}
+
+.header-bottom .navbar-item:first-child .nav-link {
+    padding-left: 0;
+}
+
+.header-bottom .navbar .nav-link {
+    color: #fff;
+    transition: .3s all;
+    letter-spacing: .1rem;
+}
+
+.header-bottom .navbar .nav-link:hover {
+    color: var(--accent-color);
+}
+
+.header-bottom .navbar .nav-link.active {
+    color: var(--accent-color);
+}
 /*===Header Rules===*/

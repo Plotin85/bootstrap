@@ -35,7 +35,6 @@
                 <div
                   class="header-top-phone d-flex align-items-center h-100 w-100"
                 >
-                  <i class="fa-solid fa-mobile-screen"></i>
                   <a class="ms-2" href="tel:+79126562348">8(912)6562348</a>
                 </div>
               </div>
@@ -109,7 +108,7 @@
         <div class="header-middle">
           <div class="header-middle bg-white py-4">
             <div class="container-fluid">
-              <div class="row">
+              <div class="row align-items-center">
                 <!-- header-logo -->
                 <div class="col-6 col-md-4">
                   <a href="index.html" class="header-logo h1">E-МАГ</a>
@@ -119,29 +118,65 @@
                 <div class="col-6 col-md-4 order-md-2 cart-button text-end">
                   <a href="#" class="btn p-1">
                     <i class="fa-solid fa-heart"></i>
-                    <span class="badge text-bg-warning cadr-badge bg-warning rounded-circle">3</span>
+                    <span
+                      class="badge text-bg-warning cadr-badge bg-warning rounded-circle"
+                      >3</span
+                    >
                   </a>
-                  <button class="btn p-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart" aria-controls="offcanvasCart">
+                  <button
+                    class="btn p-1"
+                    type="button"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasCart"
+                    aria-controls="offcanvasCart"
+                  >
                     <i class="fa-solid fa-cart-shopping"></i>
-                    <span class="badge text-bg-warning cadr-badge bg-warning rounded-circle">5</span>
+                    <span
+                      class="badge text-bg-warning cadr-badge bg-warning rounded-circle"
+                      >5</span
+                    >
                   </button>
-                  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasCart" aria-labelledby="offcanvasCartLabel">
+                  <div
+                    class="offcanvas offcanvas-end"
+                    tabindex="-1"
+                    id="offcanvasCart"
+                    aria-labelledby="offcanvasCartLabel"
+                  >
                     <div class="offcanvas-header">
-                      <h5 class="offcanvas-title" id="offcanvasCartLabel">Offcanvas</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                      <h5 class="offcanvas-title" id="offcanvasCartLabel">
+                        Offcanvas
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="offcanvas"
+                        aria-label="Close"
+                      ></button>
                     </div>
                     <div class="offcanvas-body">
                       <div>
-                        Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+                        Some text as placeholder. In real life you can have the
+                        elements you have chosen. Like, text, images, lists,
+                        etc.
                       </div>
                       <div class="dropdown mt-3">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                        <button
+                          class="btn btn-secondary dropdown-toggle"
+                          type="button"
+                          data-bs-toggle="dropdown"
+                        >
                           Dropdown button
                         </button>
                         <ul class="dropdown-menu">
                           <li><a class="dropdown-item" href="#">Action</a></li>
-                          <li><a class="dropdown-item" href="#">Another action</a></li>
-                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                          <li>
+                            <a class="dropdown-item" href="#">Another action</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              >Something else here</a
+                            >
+                          </li>
                         </ul>
                       </div>
                     </div>
@@ -149,14 +184,25 @@
                 </div>
                 <!--/ header-heart-and-cart -->
                 <!-- header-search -->
-                <div class="col-md-4 order-md-1 mt-2 mt-md-0">
+                <div class="col-md-4 order-md-1 mt-2 mt-md-3">
                   <form action="#">
                     <div class="input-group mb-3">
-                      <input type="text" class="form-control" 
-                      name="search"
-                      placeholder="Поиск..." aria-label="Поиск..." aria-describedby="button-search">
-                      <button class="btn btn-outline-warning" type="submit" id="button-search"><i class="fa-solid fa-magnifying-glass"></i></button>
-                    </div>                    
+                      <input
+                        type="text"
+                        class="form-control"
+                        name="search"
+                        placeholder="Поиск..."
+                        aria-label="Поиск..."
+                        aria-describedby="button-search"
+                      />
+                      <button
+                        class="btn btn-outline-warning"
+                        type="submit"
+                        id="button-search"
+                      >
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                      </button>
+                    </div>
                   </form>
                 </div>
                 <!--/ header-search -->
@@ -165,10 +211,57 @@
           </div>
         </div>
         <!--/ header-middle -->
-        <div class="header-buttom"></div>
       </header>
       <!--/ header -->
-      <main class="main">Content</main>
+      <!-- header-bottom -->
+      <div class="header-bottom sticky-top">
+        <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+          <div class="container-fluid">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav">
+                <li class="navbar-item">
+                  <a
+                    class="nav-link active"
+                    area-current="page"
+                    href="index.html"
+                    >Главная</a
+                  >
+                </li>
+                <li class="navbar-item">
+                  <a class="nav-link" href="#">О нас</a>
+                </li>
+                <li class="navbar-item">
+                  <a class="nav-link" href="#">Контакты</a>
+                </li>
+                <li class="navbar-item">
+                  <a class="nav-link" href="#">Оплата</a>
+                </li>
+                <li class="navbar-item">
+                  <a class="nav-link" href="#">Доставка</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="#">Каталог </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <!--/ header-bottom -->
+      <main class="main">
+        <div class="container-fluid"></div>
+      </main>
       <footer class="footer">Footer</footer>
     </div>
 
