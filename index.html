@@ -35,7 +35,7 @@
                 <div
                   class="header-top-phone d-flex align-items-center h-100 w-100"
                 >
-                  <a class="ms-2" href="tel:+79126562348">8(912)6562348</a>
+                  <a class="ms-2" href="tel:+79126562348">1(234)567890</a>
                 </div>
               </div>
               <!--/ header-phone -->
@@ -60,7 +60,7 @@
                 </ul>
               </div>
               <!--/ header-social-icons -->
-              <!-- header-top-social-icons -->
+              <!-- header-accaunt-icons -->
               <div class="col-6 col-sm-4">
                 <div class="lang d-flex justify-content-end">
                   <div class="btn-group me-2">
@@ -98,7 +98,7 @@
                   </div>
                 </div>
               </div>
-              <!--/ header-top-social-icons -->
+              <!--/ header-accaunt-icons -->
             </div>
           </div>
         </div>
@@ -110,12 +110,14 @@
             <div class="container-fluid">
               <div class="row align-items-center">
                 <!-- header-logo -->
-                <div class="col-6 col-md-4">
+                <div class="col-sm-6 col-lg-4">
                   <a href="index.html" class="header-logo h1">E-МАГ</a>
                 </div>
                 <!--/ header-logo -->
                 <!-- header-heart-and-cart -->
-                <div class="col-6 col-md-4 order-md-2 cart-button text-end">
+                <div
+                  class="col-lg-4 order-md-2 cart-button text-end d-none d-lg-block"
+                >
                   <a href="#" class="btn p-1">
                     <i class="fa-solid fa-heart"></i>
                     <span
@@ -136,55 +138,10 @@
                       >5</span
                     >
                   </button>
-                  <div
-                    class="offcanvas offcanvas-end"
-                    tabindex="-1"
-                    id="offcanvasCart"
-                    aria-labelledby="offcanvasCartLabel"
-                  >
-                    <div class="offcanvas-header">
-                      <h5 class="offcanvas-title" id="offcanvasCartLabel">
-                        Offcanvas
-                      </h5>
-                      <button
-                        type="button"
-                        class="btn-close"
-                        data-bs-dismiss="offcanvas"
-                        aria-label="Close"
-                      ></button>
-                    </div>
-                    <div class="offcanvas-body">
-                      <div>
-                        Some text as placeholder. In real life you can have the
-                        elements you have chosen. Like, text, images, lists,
-                        etc.
-                      </div>
-                      <div class="dropdown mt-3">
-                        <button
-                          class="btn btn-secondary dropdown-toggle"
-                          type="button"
-                          data-bs-toggle="dropdown"
-                        >
-                          Dropdown button
-                        </button>
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="#">Action</a></li>
-                          <li>
-                            <a class="dropdown-item" href="#">Another action</a>
-                          </li>
-                          <li>
-                            <a class="dropdown-item" href="#"
-                              >Something else here</a
-                            >
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
                 </div>
                 <!--/ header-heart-and-cart -->
                 <!-- header-search -->
-                <div class="col-md-4 order-md-1 mt-2 mt-md-3">
+                <div class="col-md-4 col-sm-6 order-md-1 mt-2 mt-md-0">
                   <form action="#">
                     <div class="input-group mb-3">
                       <input
@@ -211,6 +168,48 @@
           </div>
         </div>
         <!--/ header-middle -->
+        <!-- offcanvas-header-cart -->
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasCart"
+          aria-labelledby="offcanvasCartLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasCartLabel">Cart</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <div>
+              Some text as placeholder. In real life you can have the elements
+              you have chosen. Like, text, images, lists, etc.
+            </div>
+            <div class="dropdown mt-3">
+              <button
+                class="btn btn-secondary dropdown-toggle"
+                type="button"
+                data-bs-toggle="dropdown"
+              >
+                Dropdown button
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Another action</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!--/ offcanvas-header-cart -->
       </header>
       <!--/ header -->
       <!-- header-bottom -->
@@ -255,6 +254,30 @@
                 </li>
               </ul>
             </div>
+            <!-- header-heart-and-cart -->
+            <div class="heart-and-cart d-block d-lg-none">
+              <a href="#" class="btn p-1">
+                <i class="fa-solid fa-heart"></i>
+                <span
+                  class="badge text-bg-warning cadr-badge bg-warning rounded-circle"
+                  >3</span
+                >
+              </a>
+              <button
+                class="btn p-1"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasCart"
+                aria-controls="offcanvasCart"
+              >
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span
+                  class="badge text-bg-warning cadr-badge bg-warning rounded-circle"
+                  >5</span
+                >
+              </button>
+            </div>
+            <!--/ header-heart-and-cart -->
           </div>
         </nav>
       </div>
